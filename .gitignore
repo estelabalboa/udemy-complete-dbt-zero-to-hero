@@ -1,0 +1,10 @@
+
+target/
+dbt_packages/
+logs/
+
+# REPL ENV
+.vscode/
+
+# VENV
+dbt/
