@@ -11,4 +11,8 @@ sources:
         idenifier: raw_hosts
 
       - name: reviews
-        idenifier: raw_reviews
+        idenifier: raw_review
+        loaded_at_field: date
+        freshness:
+          warn_after: {count: 1, period: hour}
+          error_after: {count: 24, period: hour}
