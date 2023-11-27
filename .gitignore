@@ -5,6 +5,7 @@ logs/
 
 # REPL ENV
 .vscode/
+*.DS_Store
 
 # VENV
 dbt/
