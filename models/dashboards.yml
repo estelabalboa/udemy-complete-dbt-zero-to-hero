@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://
+    description: Executive Dashboard about Airbnb listings and hosts.
+
+
+    depends on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmonn_reviews')
+
+    owner:
+      name: Estela Balboa
+      email: estela.balboa@gmail.com
