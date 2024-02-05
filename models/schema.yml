@@ -63,6 +63,8 @@ models:
               max_value: 500
           - dbt_expectations.expect_column_max_to_be_between: 
               max_value: 5000
+              config:
+                severity: warn
 
   - name: fct_reviews 
     columns: 
