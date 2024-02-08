@@ -14,7 +14,7 @@ sources:
           - name: price
             tests:
               - dbt_expectactions.expect_column_values_to_match_regex:
-                  regex: "^\\$[0-9][0-9\\.]+$"
+                  regex: "^\\\\$[0-9][0-9\\\\.]+$"
       - name: hosts
         idenifier: raw_hosts
 
